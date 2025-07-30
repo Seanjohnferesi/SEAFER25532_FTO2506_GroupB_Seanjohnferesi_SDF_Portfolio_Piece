@@ -1,34 +1,127 @@
+body{
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
 header{
     background-image: url("images/background/header-background-1.png");
-    background-size: cover;
     background-position: center;
-    padding: 50px;
+    background-size: cover;
+    width: 1515px;
+    height: 1009px;
+    padding: 3.125rem;
 }
 
 .profile-card{
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    border: 2px solid black;
+    display: flex;
+    align-items: center;
 }
 
 .profile-card > img{
     width: 300px;
     height: 300px;
-    border-radius: 29.04px;
+    border-radius: 29px;
 }
 
-.profile-card > div{
+.profile-info-container{
     box-sizing: border-box;
     width: 995px;
     height: 300px;
     background-color: #ffffff;
-    border-radius: 29.04px;
+    border-radius: 29px;
     margin-left: 20px;
-    padding: 30px 69px;
+    padding: 59px 69px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1{
+    margin: 0;
+    margin-bottom: 16px; 
 }
 
 .bio{
     font-size: 22px;
-    width: 856px;
-    line-height: 151%;
+    font-weight: 400;
+    margin: 0;
+    color:#5C5C5C;
+}
+
+.proficiency{
+    box-sizing: border-box;
+    width: 564px;
+    height: 428px;
+    padding: 41px 28px;
+    border-radius: 29px;
+    background-color: #ffffff;
+    margin-top: 39px;
+}
+
+h2{
+    font-weight: 500;
+}
+
+.proficiency-levels{
+    display: flex;
+    justify-content: end;
+}
+
+.beginner, .intermediate, .advance{
+    margin-left: 50px;
+    line-height: 150%;
+}
+
+.proficiency-labels{
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    gap: 30px
+}
+
+.proficiency-labels > ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 25px;
+}
+
+.proficiency-section{
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.proficiency-bars{
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.html-css-bar{
+    width: 200px;
+    height: 27px;
+    border-radius: 7px;
+    background-color: #4A8B70;
+}
+
+.js-bar{
+    width: 230px;
+    height: 27px;
+    border-radius: 7px;
+    background-color: #4A8B70;
+}
+
+.tailwind-bar{
+    width: 260px;
+    height: 27px;
+    border-radius: 7px;
+    background-color: #4A8B70;
+}
+
+.node-js-bar{
+    width: 100px;
+    height: 27px;
+    border-radius: 7px;
+
+    background-color: #4A8B70;
 }

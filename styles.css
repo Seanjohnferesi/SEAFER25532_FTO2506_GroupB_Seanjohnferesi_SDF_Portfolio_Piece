@@ -1,148 +1,186 @@
-body{
+body {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
-header{
+header {
     background-image: url("images/background/header-background-1.png");
     background-position: center;
     background-size: cover;
     width: 1515px;
     height: 1009px;
     padding: 3.125rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 300px 428px 428px;
+    column-gap: 40px;
 }
 
-@layer profile{
+@layer profile {
 
-.profile-card{
-    display: flex;
-    align-items: center;
+    .profile-card {
+        display: flex;
+        align-items: center;
+        grid-column: 1 / -1;
+    }
+
+    .profile-card>img {
+        width: 300px;
+        height: 300px;
+        border-radius: 29px;
+    }
+
+    .profile-info-container {
+        box-sizing: border-box;
+        width: 995px;
+        height: 300px;
+        background-color: #ffffff;
+        border-radius: 29px;
+        margin-left: 20px;
+        padding: 59px 69px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h1 {
+        margin: 0;
+        margin-bottom: 16px;
+    }
+
+    .bio {
+        font-size: 22px;
+        font-weight: 400;
+        margin: 0;
+        color: #5C5C5C;
+    }
 }
 
-.profile-card > img{
-    width: 300px;
-    height: 300px;
-    border-radius: 29px;
+@layer proficiency {
+
+    .proficiency {
+        box-sizing: border-box;
+        width: 564px;
+        height: 428px;
+        padding: 41px 28px;
+        border-radius: 29px;
+        background-color: #ffffff;
+        margin-top: 39px;
+    }
+
+    h2 {
+        font-weight: 500;
+        font-size: 34px;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .levels {
+        display: flex;
+        font-size: 17px;
+        justify-content: end;
+    }
+
+    .beginner,
+    .intermediate,
+    .advance {
+        margin-left: 45px;
+
+    }
+
+    .proficiency-names {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-self: center;
+    }
+
+    .proficiency-names>ul {
+        list-style-type: none;
+        margin: 0;
+        margin-left: -40px;
+        padding: 0;
+        font-weight: 500;
+        font-size: 19px;
+    }
+
+    .proficiency-levels {
+        display: grid;
+        grid-template-columns: 141px 321px;
+
+    }
+
+    .proficiency-bars {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .html-css-bar {
+        width: 300px;
+        height: 27px;
+        border-radius: 7px;
+        background-color: #4A8B70;
+        grid-column: 1/ -1;
+    }
+
+    .js-bar {
+        width: 120px;
+        height: 27px;
+        border-radius: 7px;
+        background-color: #4A8B70;
+        grid-column: 1/ -1;
+    }
+
+    .tailwind-bar {
+        width: 260px;
+        height: 27px;
+        border-radius: 7px;
+        background-color: #4A8B70;
+        grid-column: 1/ -1;
+    }
+
+    .node-js-bar {
+        width: 50px;
+        height: 27px;
+        border-radius: 7px;
+        background-color: #4A8B70;
+        grid-column: 1/ -1;
+    }
+
 }
 
-.profile-info-container{
+@layer skills {
+
+    .skills {
+        box-sizing: border-box;
+        width: 706px;
+        height: 428px;
+        padding: 41px 28px;
+        border-radius: 29px;
+        background-color: #ffffff;
+        margin-top: 39px;
+    }
+
+    .skill-names{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px
+    }
+    .skill-1,
+    .skill-2,
+    .skill-3,
+    .skill-4,
+    .skill-5,
+    .skill-6,
+    .skill-7,
+    .skill-8,
+    .skill-9{
     box-sizing: border-box;
-    width: 995px;
-    height: 300px;
-    background-color: #ffffff;
-    border-radius: 29px;
-    margin-left: 20px;
-    padding: 59px 69px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    background-color: #4A8B7021;
+    border-radius: 97px;
+    padding: 10px 24px;
+    text-align: center;
+    font-size: 24px;
 }
-
-h1{
-    margin: 0;
-    margin-bottom: 16px; 
-}
-
-.bio{
-    font-size: 22px;
-    font-weight: 400;
-    margin: 0;
-    color:#5C5C5C;
-}
-}
-
-@layer proficiency{
-
-.proficiency{
-    box-sizing: border-box;
-    width: 564px;
-    height: 428px;
-    padding: 41px 28px;
-    border-radius: 29px;
-    background-color: #ffffff;
-    margin-top: 39px;
-}
-
-h2{
-    font-weight: 500;
-    font-size: 34px;
-    margin: 0;
-    margin-bottom: 10px;
-}
-
-.levels{
-    display: flex;
-    font-size: 17px;
-    justify-content: end;
-}
-
-.beginner, .intermediate, .advance{
-    margin-left: 45px;
-
-}
-
-.proficiency-names{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    justify-self: center;
-}
-
-.proficiency-names > ul{
-    list-style-type: none;
-    margin: 0;
-    margin-left: -40px;
-    padding: 0;
-    font-weight: 500;
-    font-size: 19px;
-}
-
-.proficiency-levels{
-   display: grid;
-   grid-template-columns: 141px 321px;
-   
-}
-
-.proficiency-bars{
-    display: flex; 
-    flex-direction: column;
-    gap: 30px;
-    justify-content: center;
-}
-
-.html-css-bar{
-    width: 300px;
-    height: 27px;
-    border-radius: 7px;
-    background-color: #4A8B70;
-    grid-column: 1/ -1;
-}
-
-.js-bar{
-    width: 120px;
-    height: 27px;
-    border-radius: 7px;
-    background-color: #4A8B70;
-    grid-column: 1/ -1;
-}
-
-.tailwind-bar{
-    width: 260px;
-    height: 27px;
-    border-radius: 7px;
-    background-color: #4A8B70;
-    grid-column: 1/ -1;
-}
-
-.node-js-bar{
-    width: 50px;
-    height: 27px;
-    border-radius: 7px;
-    background-color: #4A8B70;
-    grid-column: 1/ -1;
-}
-
-}
-
-@layer skills{
-    
 }

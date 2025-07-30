@@ -11,6 +11,8 @@ header{
     padding: 3.125rem;
 }
 
+@layer profile{
+
 .profile-card{
     display: flex;
     align-items: center;
@@ -46,6 +48,9 @@ h1{
     margin: 0;
     color:#5C5C5C;
 }
+}
+
+@layer proficiency{
 
 .proficiency{
     box-sizing: border-box;
@@ -59,56 +64,65 @@ h1{
 
 h2{
     font-weight: 500;
+    font-size: 34px;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
-.proficiency-levels{
+.levels{
     display: flex;
+    font-size: 17px;
     justify-content: end;
 }
 
 .beginner, .intermediate, .advance{
-    margin-left: 50px;
-    line-height: 150%;
+    margin-left: 45px;
+
 }
 
-.proficiency-labels{
+.proficiency-names{
     display: flex;
     flex-direction: column;
-    font-weight: 600;
-    gap: 30px
+    gap: 30px;
+    justify-self: center;
 }
 
-.proficiency-labels > ul{
+.proficiency-names > ul{
     list-style-type: none;
     margin: 0;
+    margin-left: -40px;
     padding: 0;
-    margin-left: 25px;
+    font-weight: 500;
+    font-size: 19px;
 }
 
-.proficiency-section{
-    display: flex;
-   align-items: center;
-   justify-content: space-between;
+.proficiency-levels{
+   display: grid;
+   grid-template-columns: 141px 321px;
+   
 }
 
 .proficiency-bars{
-    display: flex;
+    display: flex; 
     flex-direction: column;
-    gap: 20px
+    gap: 30px;
+    justify-content: center;
 }
 
 .html-css-bar{
-    width: 200px;
+    width: 300px;
     height: 27px;
     border-radius: 7px;
     background-color: #4A8B70;
+    grid-column: 1/ -1;
 }
 
 .js-bar{
-    width: 230px;
+    width: 120px;
     height: 27px;
     border-radius: 7px;
     background-color: #4A8B70;
+    grid-column: 1/ -1;
 }
 
 .tailwind-bar{
@@ -116,12 +130,19 @@ h2{
     height: 27px;
     border-radius: 7px;
     background-color: #4A8B70;
+    grid-column: 1/ -1;
 }
 
 .node-js-bar{
-    width: 100px;
+    width: 50px;
     height: 27px;
     border-radius: 7px;
-
     background-color: #4A8B70;
+    grid-column: 1/ -1;
+}
+
+}
+
+@layer skills{
+    
 }

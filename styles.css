@@ -746,11 +746,9 @@ main{
 }
 
 @layer Footer{
-
+     
     footer{
-        background-image: url(images/background/footer-background-4.png);
-        background-size: cover;
-        padding: 0 3.125rem;
+        margin-top: 30px;
     }
 
     .footer-container{
@@ -781,6 +779,9 @@ main{
 
     body{
         padding: 25px;
+    }
+
+    main{
         display: flex;
         flex-direction: column;
     }
@@ -1004,6 +1005,14 @@ main{
             padding: 12px;
         }
 
+        .education-container{
+            gap: 10px
+        }
+
+        .education> h2{
+            margin: 0;
+        }
+
         @layer Education-1{
 
             .education-info{
@@ -1013,9 +1022,10 @@ main{
                 padding: 8px;
             }
 
-            .education-details > time{
+            .education-details > .time{
                 font-size: 8px;
-                
+                vertical-align: top;
+                display: inline;
             }
 
             .education-details > p{
@@ -1034,6 +1044,344 @@ main{
 
             .education-summary > ul{
                 padding: 0;
+                line-height: 13px;
             }
+        }
+
+        @layer Education-2{
+
+            .education-info-1{
+                width: 295px;
+                height: 127px;
+                border-radius: 10px;
+                padding: 8px;
+            }
+
+            .education-details-1 > .time{
+                font-size: 8px;
+                vertical-align: top;
+                display: inline;
+            }
+
+            .education-details-1 > p{
+                font-size: 8px;
+            }
+
+            .education-details-1 > h3{
+                font-size: 10px;;
+            }
+
+            .education-summary-1{
+                font-size: 8px;
+                width: 147px;
+                height: 108px;
+            }
+
+            .education-summary-1 > ul{
+                padding: 0;
+                line-height: 13px;
+            }
+        }
+
+        @layer Education-3{
+
+            .education-info-2{
+                width: 295px;
+                height: 93px;
+                border-radius: 10px;
+                padding: 8px;
+            }
+
+            .education-details-2 > .time{
+                font-size: 8px;
+                vertical-align: top;
+                display: inline;
+            }
+
+            .education-details-2 > p{
+                font-size: 8px;
+            }
+
+            .education-details-2 > h3{
+                font-size: 10px;;
+            }
+
+            .education-summary-2{
+                font-size: 8px;
+                width: 147px;
+                height: 108px;
+            }
+
+            .education-summary-2 > ul{
+                padding: 0;
+                line-height: 13px;
+            }
+        }
+    }
+
+    @layer Tools{
+        
+        .tools-container{
+            width: 319px; 
+            height: 167px;
+            border-radius: 12px;
+        }
+
+        .tools-container > h2{
+            font-size: 12px;
+            margin: -20px 0 15px 0;
+        }
+
+        .tools-section{
+            width: 280px;
+            height: 104px;
+            flex-direction: row;
+            gap: 25px;
+        }
+
+        /*Languages Section*/
+
+        .lang-section-1 > img{
+            width: 17px;
+            height: 17px;
+        }
+
+        .lang-header{
+            border-radius: 59;
+            padding: 2px 6px;
+            font-size: 5px;
+            height: 11px;
+            margin-top: 5px;
+        }
+
+        .lang-section-1{
+            width:76px;
+            height: 104px;
+            border-radius: 6px;
+            padding: 16px 4px;
+            row-gap: 16px;
+        }
+
+        /*Design Section*/
+
+        .lang-section-2 > img{
+            width: 17px;
+            height: 17px;
+        }
+
+        .design-header{
+            border-radius: 59;
+            padding: 2px 6px;
+            font-size: 5px;
+            height: 11px;
+            margin-top: 5px;
+        }
+
+        .lang-section-2{
+            width:76px;
+            height: 104px;
+            border-radius: 6px;
+            padding: 16px 4px;
+            row-gap: 1px;
+        }
+
+        /* Software Section*/
+
+        .lang-section-3 > img{
+            width: 17px;
+            height: 17px;
+        }
+
+        .tools-header{
+            border-radius: 59;
+            padding: 2px 6px;
+            font-size: 5px;
+        }
+
+        .lang-section-3{
+            width:76px;
+            height: 104px;
+            border-radius: 6px;
+            padding: 16px 4px;
+            row-gap: 1px;
+        }
+    }
+
+    @layer Experience{
+
+        .experience{
+            width: 319px;
+            height: 487px;
+            border-radius: 12px;
+            padding: 12px;
+        }
+
+        .experience > h2{
+        margin: 0;
+    }
+
+        .experience-container{
+            gap: 1rem;
+        }
+
+        @layer Experience-1{
+
+        .exp-info-1{
+            width: 295px;
+            height: 141px;
+            border-radius: 10px;
+            padding: 8px;
+            align-items: start;
+        }
+
+        .exp-details-1{
+            width: 156px;
+            height: 96px;
+        }
+        .exp-details-1 > *{
+            margin: 0;    
+        }
+
+        .exp-details-1 > time{
+            font-size: 8px;
+            font-weight: 500;
+            line-height: 150%;
+            vertical-align: top;
+        }
+
+        .exp-details-1 > h3{
+            font-size: 10px;
+            font-weight: 500;
+            line-height: 150%;
+        }
+
+        .exp-details-1 > p{
+            font-size: 8px;
+            font-weight: 400;
+            line-height: 150%;
+            color: #EBF9F2;
+        }
+
+        .exp-summary-1 > ul{
+            margin: 0;
+            font-size: 8px;
+            font-weight: 400;
+            line-height: 150%;
+        }
+
+
+
+        .summary-recent-wrapper{
+            display: flex;
+            width: 80%;
+            justify-content: space-between;
+        }
+
+        .recent-badge > div{
+            width: 61px;
+            border-radius: 59px;
+            padding: 2px 2px;
+            background-color: #D76239;
+            text-align: center;
+        }
+    }
+
+    @layer Experience-2{
+
+        .exp-info-2{
+            box-sizing: border-box;
+            width: 1260px;
+            height: 145px;
+            border-radius: 29px;
+            padding: 19px 25px;
+            color: black;
+            background-color:#E7F0EC;
+            display: flex;
+            align-items: start;
+        }
+
+        .exp-details-2{
+            width: 253px;
+            height: 100px;
+        }
+        .exp-details-2 > *{
+            margin: 0;    
+        }
+
+        .exp-details-2 > time{
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 150%;
+        }
+
+        .exp-details-2 > h3{
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 150%;
+        }
+
+        .exp-details-2 > p{
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 150%;
+            color: #3F3D3D;
+        }
+
+        .exp-summary-2 > ul{
+            margin: 0;
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 150%;
+        }
+    }
+
+    @layer Experience-3{
+
+        .exp-info-3{
+            box-sizing: border-box;
+            width: 1260px;
+            height: 145px;
+            border-radius: 29px;
+            padding: 19px 25px;
+            color: black;
+            background-color:#E7F0EC;
+            display: flex;
+            align-items: start;
+        }
+
+        .exp-details-3{
+            width: 253px;
+            height: 100px;
+        }
+        .exp-details-3 > *{
+            margin: 0;    
+        }
+
+        .exp-details-3 > time{
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 150%;
+        }
+
+        .exp-details-3 > h3{
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 150%;
+        }
+
+        .exp-details-3 > p{
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 150%;
+            color: #3F3D3D;
+        }
+
+        .exp-summary-3 > ul{
+            margin: 0;
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 150%;
+        }
+    }
     }
 }

@@ -1,7 +1,6 @@
 body {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     margin: 0;
-    overflow-x: hidden;
     background-image: url("images/background/header-background-1.png");
     background-position: center;
     background-size: cover;
@@ -773,6 +772,15 @@ main{
         color: #DDDDDD;
         line-height: 150%;
     }
+
+    a{
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
 }
 
 @media(max-width: 402px){
@@ -784,6 +792,8 @@ main{
     main{
         display: flex;
         flex-direction: column;
+        gap: 16px;
+        margin-top: 16px;
     }
 
     @layer Profile{
@@ -826,6 +836,11 @@ main{
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
+    }
+
+    .proficiency-skills-wrapper{
+        flex-direction: column;
+        gap: 16px;
     }
 
     @layer Proficiency{
@@ -894,10 +909,6 @@ main{
             height: 11px;
             border-radius: 3px;
         }
-    }
-
-    .proficiency-skills-wrapper{
-        flex-direction: column;
     }
 
     @layer Skills{
@@ -1120,6 +1131,10 @@ main{
     }
 
     @layer Tools{
+
+        .tools{
+            margin-left: 0;
+        }
         
         .tools-container{
             width: 319px; 
@@ -1217,8 +1232,9 @@ main{
         }
 
         .experience > h2{
-        margin: 0;
-    }
+            margin: 0;
+            margin-bottom: 6px;
+        }
 
         .experience-container{
             gap: 1rem;
@@ -1246,13 +1262,13 @@ main{
             font-size: 8px;
             font-weight: 500;
             line-height: 150%;
-            vertical-align: top;
         }
 
         .exp-details-1 > h3{
             font-size: 10px;
             font-weight: 500;
             line-height: 150%;
+            margin-top: 10px;
         }
 
         .exp-details-1 > p{
@@ -1267,121 +1283,154 @@ main{
             font-size: 8px;
             font-weight: 400;
             line-height: 150%;
+            padding: 0;
+            margin-top: 8px;
         }
 
 
 
         .summary-recent-wrapper{
-            display: flex;
-            width: 80%;
-            justify-content: space-between;
+            flex-direction: column-reverse;
+        }
+
+        .recent-badge{
+            height: 16px;
+            margin-left: 6.5rem;
         }
 
         .recent-badge > div{
             width: 61px;
             border-radius: 59px;
-            padding: 2px 2px;
+            padding: 2px;
             background-color: #D76239;
             text-align: center;
-        }
-    }
+            font-size: 8px;
 
-    @layer Experience-2{
+        }
+        }
+
+        @layer Experience-2{
 
         .exp-info-2{
-            box-sizing: border-box;
-            width: 1260px;
-            height: 145px;
-            border-radius: 29px;
-            padding: 19px 25px;
-            color: black;
-            background-color:#E7F0EC;
-            display: flex;
+            width: 295px;
+            height: 122px;
+            border-radius: 10px;
+            padding: 8px;
             align-items: start;
         }
 
         .exp-details-2{
-            width: 253px;
-            height: 100px;
+            width: 300px;
+            height: 96px;
         }
         .exp-details-2 > *{
             margin: 0;    
         }
 
-        .exp-details-2 > time{
-            font-size: 19px;
+        .exp-details-2 > .time{
+            font-size: 8px;
             font-weight: 500;
             line-height: 150%;
+            vertical-align: top;
         }
 
         .exp-details-2 > h3{
-            font-size: 24px;
+            font-size: 10px;
             font-weight: 500;
             line-height: 150%;
+            margin-top: 8px;
         }
 
         .exp-details-2 > p{
-            font-size: 19px;
+            font-size: 8px;
             font-weight: 400;
             line-height: 150%;
             color: #3F3D3D;
+;
         }
 
         .exp-summary-2 > ul{
             margin: 0;
-            font-size: 19px;
+            font-size: 8px;
             font-weight: 400;
             line-height: 150%;
+            padding: 0;
+        }
+        }
+
+        @layer Experience-3{
+
+            .exp-info-3{
+                width: 295px;
+                height: 130px;
+                border-radius: 10px;
+                padding: 8px;
+                align-items: start;
+            }
+
+            .exp-details-3{
+                width: 300px;
+                height: 96px;
+            }
+            
+            .exp-details-3 > *{
+                margin: 0;    
+            }
+
+            .exp-details-3 > .time{
+                font-size: 8px;
+                font-weight: 500;
+                line-height: 150%;
+                vertical-align: top;
+            }
+
+            .exp-details-3 > h3{
+                font-size: 10px;
+                font-weight: 500;
+                line-height: 150%;
+                margin-top: 8px;
+            }
+
+            .exp-details-3 > p{
+                font-size: 8px;
+                font-weight: 400;
+                line-height: 150%;
+                color: #3F3D3D;
+            }
+
+            .exp-summary-3 > ul{
+                margin: 0;
+                font-size: 8px;
+                font-weight: 400;
+                line-height: 150%;
+                padding: 0;
+            }
         }
     }
 
-    @layer Experience-3{
+    @layer Footer{
 
-        .exp-info-3{
-            box-sizing: border-box;
-            width: 1260px;
-            height: 145px;
-            border-radius: 29px;
-            padding: 19px 25px;
-            color: black;
-            background-color:#E7F0EC;
-            display: flex;
-            align-items: start;
-        }
-
-        .exp-details-3{
-            width: 253px;
-            height: 100px;
-        }
-        .exp-details-3 > *{
-            margin: 0;    
-        }
-
-        .exp-details-3 > time{
-            font-size: 19px;
-            font-weight: 500;
-            line-height: 150%;
-        }
-
-        .exp-details-3 > h3{
-            font-size: 24px;
-            font-weight: 500;
-            line-height: 150%;
-        }
-
-        .exp-details-3 > p{
-            font-size: 19px;
-            font-weight: 400;
-            line-height: 150%;
-            color: #3F3D3D;
-        }
-
-        .exp-summary-3 > ul{
+        footer{
             margin: 0;
-            font-size: 19px;
-            font-weight: 400;
-            line-height: 150%;
+            margin-top: 16px;
+        }
+
+        .footer-container{
+            width: 319px;
+            height: 89px;
+            border-radius: 12px;
+            padding: 12px;
+        }
+
+        .footer-container > h2{
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+        .footer-container > p{
+            font-size: 10px;
+            margin: 0;
         }
     }
-    }
+
 }

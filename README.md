@@ -63,15 +63,13 @@ This gave me real-world experience turning a professional design into working co
 
 ## 🎙️ Presentation Video
 
-🎥 [Click here to view my 5–10 minute walkthrough video](#)  
-_(Still have to edit this one with my vid)_
+🎥 [Click here to view my 5–10 minute walkthrough video](https://www.loom.com/share/c87554c828904b35a66229913f1d5d3a?sid=20485060-99bd-4487-ac2d-52e70a4eb64b)
 
 ---
 
 ## 🔗 GitHub Repository
 
-📁 [View the full source code on GitHub](#)  
-_(my GitHub repo link)_
+📁 [View the full source code on GitHub](https://github.com/Seanjohnferesi/SEAFER25532_FTO2506_GroupB_Seanjohnferesi_SDF_Portfolio_Piece)
 
 ---
 
